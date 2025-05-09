@@ -39,7 +39,7 @@ function verificarLogin() {
     });
   } else {
     loginItem.textContent = 'Login';
-    loginItem.href = '../Login/index.html';
+    loginItem.href = './Login/index.html';
   }
 }
 
