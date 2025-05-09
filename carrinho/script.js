@@ -1,6 +1,6 @@
 /* Simulando um usuario */
-const idUser = "1"; // Provisório
-const nome = "Marlos Bianna"; // Provisório
+// const idUser = "1"; // Provisório
+// const nome = "Marlos Bianna"; // Provisório
 localStorage.setItem("nomeUsuario", nome);  // Provisório
 localStorage.setItem("idUsuario", idUser);  // Provisório
 document.getElementById("usuario").innerText = localStorage.getItem("nomeUsuario");

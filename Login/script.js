@@ -30,7 +30,7 @@ async function carregarDadosApi(event) {
         localStorage.setItem("endCep", usuario.endCep); 
         localStorage.setItem("telefone", usuario.telefone); 
         
-        window.location.href = "../home/index.html"; // Redireciona para a página home após o login
+        window.location.href = "../index.html"; // Redireciona para a página home após o login
 
 
       }
