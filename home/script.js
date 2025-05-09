@@ -49,7 +49,7 @@ function adicionarAoCarrinho(botao) {
 
   if (!idUsuario) {
     if (confirm('Você precisa estar logado para adicionar itens ao carrinho. Deseja fazer login agora?')) {
-      window.location.href = "../Login/index.html"; // Redireciona para a página de login
+      window.location.href = "./Login/index.html"; // Redireciona para a página de login
     }
     return;
   }
