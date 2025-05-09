@@ -1,8 +1,6 @@
 /*mobile*/
-* * {
+* {
   font-family: sans-serif;
-
-    
 }
 body {
     background-image: linear-gradient(black, rgba(0, 0, 0, 0.336), black), url(../home/assets/image_fx\ \(8\).jpg);
@@ -164,21 +162,52 @@ h1 {
 }
 
 .alterar-button{
-    background-color: #9b2222;
-    max-width: 100%;
-    width: auto;
-    justify-content: space-evenly;
-    margin-inline: auto;
+    padding: 8px 6px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    color: #f22222;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 280px;
+    align-self: center;
+    box-shadow: 0 4px 6px rgba(211, 47, 47, 0.363);
 }
 .alterar-button:hover{
-  background-color: #681717 ;
+  background-color: #681717;
+  color:#ffffff ;
 
 }
 input{
     font-family: inherit;
     font-size: inherit;
+     border: 1px solid ;
+    border-radius: 4px;
     display: flex;
     margin: auto;
+}
+.submit-salvar{
+    padding: 4px 2px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+.button-cancelar{
+    padding: 4px 2px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
 }
 
 /*Tablet*/

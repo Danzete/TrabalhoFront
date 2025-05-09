@@ -1,14 +1,4 @@
-/* Simulando um usuario */
-// const idUser = "1"; // Provisório
-// const nome = "Marlos Bianna"; // Provisório
-localStorage.setItem("nomeUsuario", nome);  // Provisório
-localStorage.setItem("idUsuario", idUser);  // Provisório
 document.getElementById("usuario").innerText = localStorage.getItem("nomeUsuario");
-// document.getElementById("idUsuario").innerText = localStorage.getItem("idUsuario");
-
-urlUsuarios = 'https://681c9922f74de1d219ad056c.mockapi.io/api/v1'; /* usuario */
-urlProdutos = 'https://681caf46f74de1d219ad6b67.mockapi.io/api/v1'; /* produtos */
-urlVendas = 'https://681c9922f74de1d219ad056c.mockapi.io/api/v1/Vendas';
 
 async function deletarRegistro(id) {
   const url = `https://681c9922f74de1d219ad056c.mockapi.io/api/v1/Vendas/${id}`
@@ -74,7 +64,6 @@ async function limparCarrinho() {
   localStorage.removeItem('carrinho');
   carregarCarrinho("EXCLUIR");
 }
-
 async function VerificarCarrinho() {
   const idUsuario = localStorage.getItem('idUsuario'); // Pega o ID do usuário logado
   const url = `https://681c9922f74de1d219ad056c.mockapi.io/api/v1/Vendas?idUsuario=${idUsuario}`
