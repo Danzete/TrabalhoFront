@@ -1,0 +1,148 @@
+.header {
+  display: none; 
+  height: 30vh;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  text-align: center; 
+  padding: 29px; 
+  font-size: 24px; 
+  margin-bottom: 5px; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to top, #063a01, #269c1c);
+  background-image: url(./Assets/Imagem\ do\ WhatsApp\ de\ 2025-05-07\ à\(s\)\ 16.22.23_b9d2a2f2.jpg);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.login {
+  background: rgba(0, 0, 0, 0.705);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.login .logo {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 100%;
+  margin: 0 auto 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.login input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: rgba(141, 141, 141, 0.295);
+  border: none;
+  border-radius: 8px;
+  color: #28c214;
+  font-size: 14px;
+  font-weight: bold;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login button {
+  height: 39px;
+  width: 100%;
+  padding: 7px;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  border: solid black;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+.login button:hover {
+  background-color: #28c214;
+  width: 100%;
+}
+
+.login a {
+  color: #aaa;
+  font-size: 15px;
+  display: block;
+  margin-top: 10px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Estilos padrão para mobile */
+body {
+  font-size: 14px;
+}
+
+/* Para tablets */
+@media (min-width: 768px) {
+  .header {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body {
+    font-size: 16px;
+  }
+  .login {
+    width: 70%;
+    padding: 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .login button {
+    font-size: 16px;
+  }
+}
+
+/* Para desktops */
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body {
+    font-size: 18px;
+  }
+  .login {
+    width: 50%;
+    padding: 40px;
+  }
+  .login button {
+    font-size: 18px;
+  }
+}
+
+  

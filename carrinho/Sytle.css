@@ -1,0 +1,108 @@
+header {
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+header img {
+  margin: 0;
+  left: 30px;
+  top: 0px;
+  width: 70px;
+  transition: transform 0.3s;
+}
+
+header img:hover {
+  transform: scale(1.5);
+}
+ .navbar {
+  display: flex;
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px 40px;
+  background-color: rgba(20, 20, 20, 0)!important;/* Fundo preto com 30% de opacidade */
+  font-size: 14px;
+  border-radius: 50px;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  z-index: 1050;
+  transition: background-color 0.3s ease; /* Transição suave para mudanças de cor */
+  color: white;
+ }
+  
+.cart-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.884);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+  display: flex;
+  padding: 20px;
+  margin-inline: auto ;
+  color: white;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+button{
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.555);
+}
+.total {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.336), black), url(../home/assets/image_fx\ \(8\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.cart-container {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+  color: white;
+  border: black;
+}
+button{
+  display: flex;
+ 
+}
