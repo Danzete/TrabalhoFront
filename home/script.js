@@ -28,7 +28,7 @@ function verificarLogin() {
 
     // Botão de perfil
     document.getElementById('perfil').addEventListener('click', function () {
-      window.location.href = './Perfil/index.html';
+      window.location.href = '/Perfil/index.html';
     });
 
     // Botão de logout
