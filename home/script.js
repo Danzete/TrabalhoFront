@@ -28,7 +28,9 @@ function verificarLogin() {
 
     // Botão de perfil
     document.getElementById('perfil').addEventListener('click', function () {
+
       window.location.href = '../Perfil/index.html';
+
     });
 
     // Botão de logout
@@ -40,6 +42,7 @@ function verificarLogin() {
   } else {
     loginItem.textContent = 'Login';
     loginItem.href = '../Login/index.html';
+
   }
 }
 
@@ -50,6 +53,7 @@ function adicionarAoCarrinho(botao) {
   if (!idUsuario) {
     if (confirm('Você precisa estar logado para adicionar itens ao carrinho. Deseja fazer login agora?')) {
       window.location.href = "../Login/index.html"; // Redireciona para a página de login
+
     }
     return;
   }
