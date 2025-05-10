@@ -79,7 +79,7 @@ async function deletarUsuario() {
     });
     if (response.ok) {
       alert("Usuário deletado com sucesso!");
-      window.location.href = "./index.html"; // Redireciona para a página inicial
+      window.location.href = "../index.html"; // Redireciona para a página inicial
       limparLocalStorage();
     } else {
       alert("Erro ao deletar o usuário.");
