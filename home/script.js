@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function verificarLogin() {
   const nomeUsuario = localStorage.getItem('nomeUsuario');
   const idUsuario = localStorage.getItem('idUsuario');
-  const loginItem = document.querySelector('.nav-item a[href="#"]:last-child');// troca de item de login para logout
+  const loginItem = document.querySelector('.nav-item a[href="#"]:last-child');// troca de item mais proximo que seria o login
 
   if (nomeUsuario && idUsuario) {
     // Transforma em logout e adiciona o botão de perfil com o nome do usuário
@@ -41,7 +41,7 @@ function verificarLogin() {
     });
   } else {
     loginItem.textContent = 'Login';
-    loginItem.href = '../Login/index.html';
+    loginItem.href = './Login/index.html';
 
   }
 }
@@ -52,7 +52,7 @@ function adicionarAoCarrinho(botao) {
 
   if (!idUsuario) {
     if (confirm('Você precisa estar logado para adicionar itens ao carrinho. Deseja fazer login agora?')) {
-      window.location.href = "../Login/index.html"; // Redireciona para a página de login
+      window.location.href = "./Login/index.html"; // Redireciona para a página de login
 
     }
     return;
@@ -64,18 +64,18 @@ function adicionarAoCarrinho(botao) {
 
   const preco = parseFloat(botao.getAttribute('data-preco')); // Pega o preço do produto
 
-  // Cria o objeto do produto com o preço total calculado
+
   const produto = {
     nomeProduto: botao.getAttribute('data-nome'),
     quantProduto: quantidade,
-    precoProduto: preco, // Calcula o valor total
-    idUsuario: idUsuario, // Inclui o ID do usuário no objeto
+    precoProduto: preco,
+    idUsuario: idUsuario,
     vendaData: new Date().toISOString(), // Data da venda
   };
 
   // Envia o produto para a API
   fetch('https://681c9922f74de1d219ad056c.mockapi.io/api/v1/Vendas', {
-    method: 'POST', // Método HTTP POST
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },

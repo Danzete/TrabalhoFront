@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(black, rgba(0, 0, 0, 0.336), black), url(./assets/image_fx\ \(8\).jpg);
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.863), black), url(./assets/image_fx\ \(8\).jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ h1 img {
 }
 
 .cardproduto {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0, 0, 0);
   padding: 20px;
   width: 150px;
   text-align: center;
@@ -304,6 +304,71 @@ footer {
     width: 600px;
     margin-top: -100px;
   }
+  .tag-list {
+    height: 30rem;
+    width: auto;
+    font-family: "Montserrat";
+    position: fixed;  
+
+  top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 2000;
+    pointer-events: none;
+  }
+
+  .tag-list.right {
+    left: auto;
+    right: 0;
+  }
+
+  .inner {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: loop-vertical 5s linear infinite;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    background-color: #000000;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 
+      0 0.1rem 0.2rem #00000033,
+      0 0.1rem 0.5rem #0000004d,
+      0 0.2rem 1.5rem #00000066;
+    pointer-events: auto;
+  }
+
+  .tag span {
+    font-size: 1.2rem;
+    color: #fafcff;
+  }
+
+  .fade {
+    position: absolute;
+    background: linear-gradient(180deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
+    inset: 0;
+    pointer-events: none;
+  }
+
+  @keyframes loop-vertical {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
 
   .navbar {
     background-color: rgba(20, 20, 20, 0.767)!important;/* Fundo preto com 30% de opacidade */
@@ -320,7 +385,7 @@ footer {
   }
   .produtos {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding: 40px;
   }
 

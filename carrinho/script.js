@@ -13,7 +13,7 @@ async function endUsuario(id) {
   const endbairro = localStorage.getItem("endBairro");
   const endCidade = localStorage.getItem("endCidade");
   const endCep = localStorage.getItem("endCep");
-  // <div id="endEntrega" class="card">
+  //--== <div id="endEntrega" class="card">
   try {
     var response = await fetch(url);
     if (response.status === 200) {
@@ -69,14 +69,15 @@ async function CarrinhoDeCompras(Macao) {
           if (Macao === "INCLUIR") {
             totalpreco += parseFloat(itens.quantProduto * itens.precoProduto)
             qtItens = qtItens + 1
-            listaCompras.innerHTML += `
-            <div name="listItens" class="cart-container">
-            <span>${itens.nomeProduto}</span>
-            <span>${itens.quantProduto}</span>
-            <span>${itens.precoProduto}</span>
-            <span>${(itens.quantProduto * itens.precoProduto)}</span>
-            </div >
-          `;
+            listaCompras.innerHTML += // ...dentro do forEach...
+listaCompras.innerHTML += `
+  <div name="listItens" class="cart-container">
+    <div>Produto: ${itens.nomeProduto}</div>
+    <div>Quantidade: ${itens.quantProduto}</div>
+    <div>Preço: R$ ${itens.precoProduto}</div>
+    <div>Total: R$ ${(itens.quantProduto * itens.precoProduto).toFixed(2)}</div>
+  </div>
+`;
           }
           if (Macao === "EXCLUIR" || Macao === "FINALIZAR") {
             setTimeout(async () => {
